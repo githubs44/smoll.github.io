@@ -1,0 +1,672 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Brocil;
+    src: url(../font/Brocil.ttf);
+}
+
+@font-face {
+    font-family: coconutz;
+    src: url(../font/coconutz.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-family: Brocil;
+    overflow-x: hidden;
+}
+
+p,
+a {
+    font-size: 1.5vw;
+    font-family: coconutz;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 4vw;
+    border: 3px solid #000;
+    box-shadow: 0px 4px 0px 0px #000;
+    padding: 0.5vw 3vw;
+    color: #000;
+    position: fixed;
+    width: 94%;
+    z-index: 9999;
+}
+
+.logo img {
+    width: 6vw;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.links a:hover{
+    color: #17702A;
+
+}
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.social a img {
+    width: 5vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.social a img:hover {
+    transform: scale(1.1);
+}
+
+.buy_button {
+    background-color: #FFF128;
+    border: 2px solid #000;
+    box-shadow: 0px 4px 0px 0px #000;
+    padding: 0.9vw 3.5vw;
+    border-radius: 4vw;
+    transition: all 0.3s ease-in-out;
+    font-weight: 800;
+    color: #000;
+}
+
+.buy_button:hover {
+    box-shadow: none;
+    color:red;
+    /* border: 2px solid #fff; */
+
+}
+
+.header,
+.iner,
+.roadmap,
+.footer {
+
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.header {
+    background-image: url(../images/header.png);
+    height: 70vw;
+    padding: 3vw;
+
+}
+
+
+.header .main {
+    margin-left: 7vw;
+    margin-top: 13vw;
+}
+
+.header .main h1 {
+    font-size: 8vw;
+    line-height: 7vw;
+    color: #fff;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 2vw;
+}
+
+marquee {
+    background-color: #FFF240;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding: 1vw 0;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    z-index: 99;
+}
+
+/* about   */
+.about {
+    background-color: #90e6c9;
+    padding: 10vw 5vw 0vw 5vw;
+    margin-top: -3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about .iner {
+    background-image: url(../images/about.png);
+    height: 35vw;
+    padding: 3vw;
+    width: 60vw;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+}
+
+.about .iner h1 {
+    background-color: #BAEF08;
+    border-radius: 3vw;
+    border: 4px solid #000;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: #fff;
+    padding: 0vw 5vw;
+    font-size: 5vw;
+    width: fit-content;
+    text-align: center;
+    margin-left: 13vw;
+    margin-top: -8vw;
+    rotate: 3deg;
+    text-transform: uppercase;
+
+}
+
+.about .iner p {
+    background-color: #0000001A;
+    width: 30vw;
+    margin-left: 22vw;
+    padding: 2vw;
+    margin-top: 5vw;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 1.6vw;
+}
+
+
+.moving_comix_scroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    background: #FBFF28;
+    border-top: 0.1875rem solid #000000;
+    border-bottom: 0.1875rem solid #000000;
+}
+
+.moving_comix_scroll .moving_comix_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.moving_comix_scroll .moving_comix_content .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1vw 0.5vw;
+    gap: 1vw;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+
+.moving_comix_scroll .moving_comix_content .item img {
+    width: 15rem;
+    height: 15rem;
+}
+
+/* roadmap */
+.roadmap {
+    background-image: url(../images/roadmap.png);
+    height: 80vw;
+    padding: 5vw;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+
+.flying {
+    position: absolute;
+    width: 30vw;
+    top: 0;
+    right: 0;
+    animation: flyToCenter 5s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.sky_1 {
+    position: absolute;
+    width: 10vw;
+    top: 10vw;
+    left: 0;
+    animation: moveLeftToRight 5s linear infinite,  1s infinite;
+}
+
+.sky_2 {
+    position: absolute;
+    width: 15vw;
+    top: 20vw;
+    right: 0;
+    animation: moveRightToLeft 5s linear infinite,  1s infinite;
+}
+
+
+.sky_3 {
+    position: absolute;
+    width: 10vw;
+    top: 30vw;
+    left: 0;
+    animation: moveLeftToRight 5s linear infinite,  1s infinite;
+}
+
+.sky_4 {
+    position: absolute;
+    width: 10vw;
+    top: 40vw;
+    right: 0;
+    animation: moveRightToLeft 5s linear infinite, blink 1s infinite;
+}
+
+.sky_5 {
+    position: absolute;
+    width: 10vw;
+    bottom: 40vw;
+    right: 0;
+    animation: moveRightToLeft 5s linear infinite, blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.sect4{
+    overflow-x: hidden;
+}
+
+ 
+ .sect4-container {
+    width: 100vw;                  /* Full-width container */
+    overflow: hidden;             /* Hide overflow to create scrolling effect */
+    white-space: nowrap;          /* Prevent images from wrapping */
+    background-color: #fff240;
+    padding: 1.5vw 1vw;
+
+  }
+
+  
+  .scrolling-images {
+    display: inline-flex;         /* Display images in a row */
+    animation: scroll-lleft 3s linear infinite; 
+  }
+
+  /* Styling for each image */
+  .scrolling-images img {
+    width: 20vw;                 /* Set width for each image */
+    /* height: 20vw;                Set height for each image */
+    object-fit: cover;            /* Ensures images fit nicely */
+    margin-right: 1.5vw;           /* Optional spacing between images */
+  }
+
+  
+  @keyframes scroll-lleft {
+    0% {
+      transform: translateX(0%);   /* Start from the right */
+    }
+    100% {
+      transform: translateX(-50%);  /* Move all the way to the left */
+    }
+  }
+
+
+
+  /* -------------------------- */
+
+@keyframes moveLeftToRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 90vw;
+        /* Move to the far right */
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 90vw;
+        /* Move to the far left */
+    }
+}
+
+
+@keyframes flyToCenter {
+    0% {
+        top: 0;
+        right: 0;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
+
+.roadmap h2 {
+    background-color: #BAEF08;
+    border: 2px solid #000;
+    border-radius: 5vw;
+    padding: 1vw 3vw;
+    width: fit-content;
+    font-size: 3vw;
+    rotate: 3deg;
+    margin-bottom: 2vw;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.roadmap .box_1 {
+    padding: 6vw 4vw 2vw 4vw;
+    border-radius: 4vw;
+    border: 4px solid #000;
+    rotate: -4deg;
+    background-color: #FFEABB;
+}
+
+.box_2 {
+    rotate: 4deg !important;
+}
+
+.roadmap .box_1 span {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 4px solid #000;
+    color: #fff;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #63CB7C;
+    font-size: 3vw;
+    margin-top: -8vw;
+}
+
+.roadmap .box_1 h3 {
+    font-size: 2.5vw;
+    color: #17702A;
+}
+
+.roadmap .box_1 p {
+    color: #000000;
+}
+
+
+.marquee_2 {
+    background-color: #5FCA78;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding: 1vw 0;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    z-index: 99;
+}
+
+
+.footer {
+    background-image: url(../images/footer.png);
+    height: 85vw;
+    padding: 3vw;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+    flex-direction: column;
+    margin-top: -3vw;
+    color: #000;
+}
+
+.footer nav {
+    width: 100%;
+    position: static;
+}
+
+.footer .main {
+    position: absolute;
+    top: 15vw;
+    right: 5vw;
+}
+
+
+
+
+.footer .main h1 {
+    font-size: 8vw;
+    line-height: 7vw;
+    color: #fff;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 2vw;
+}
+
+@media screen and (max-width: 480px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    p,
+    a {
+        font-size: 2.5vw;
+    }
+
+    nav {
+        border-radius: 5vw;
+        border: 1px solid #000;
+        box-shadow: 0px 2px 0px 0px #000;
+    }
+
+    .logo img {
+        width: 8vw;
+    }
+
+
+    .social a img {
+        width: 6vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .buy_button {
+        background-color: #FFF128;
+        border: 1px solid #000;
+        box-shadow: 0px 2px 0px 0px #000;
+        padding: 0.9vw 3.5vw;
+        border-radius: 4vw;
+        transition: all 0.3s ease-in-out;
+        font-weight: 800;
+    }
+
+
+
+
+    .header .main h1 {
+        font-size: 10vw;
+        line-height: 9vw;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .footer .logo {
+        display: none;
+    }
+
+    .footer .main {
+        margin-left: 7vw;
+        margin-top: 7vw;
+    }
+
+    .footer .main h1 {
+        font-size: 10vw;
+        line-height: 9vw;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    marquee {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .marquee_2 {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .about .iner {
+        height: 40vw;
+        width: 70vw;
+        border-top: 4px solid #fff;
+        border-left: 4px solid #fff;
+        border-right: 4px solid #fff;
+    }
+
+    .about .iner h1 {
+        background-color: #BAEF08;
+        border-radius: 3vw;
+        border: 2px solid #000;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        margin-left: 18vw;
+
+    }
+
+    .about .iner p {
+        width: 40vw;
+        margin-left: 22vw;
+        padding: 2vw;
+        -webkit-text-stroke-width: 0px;
+        font-size: 2vw;
+    }
+
+    .moving_comix_scroll {
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+    }
+
+    .moving_comix_scroll .moving_comix_content .item img {
+        border-radius: 3px;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /* roadmap */
+    .roadmap {
+        height: 250vw;
+    }
+
+    .roadmap h2 {
+        font-size: 6vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .roadmap .box_1 {
+        padding: 6vw 4vw 7vw 4vw;
+        border: 2px solid #000;
+        margin-bottom: 5vw;
+    }
+
+    .box_2 {
+        rotate: 4deg !important;
+    }
+
+    .roadmap .box_1 span {
+        width: 10vw;
+        height: 10vw;
+        border: 2px solid #000;
+        font-size: 5vw;
+        margin-top: -10vw;
+    }
+
+    .roadmap .box_1 h3 {
+        font-size: 5vw;
+    }
+
+    .roadmap .box_1 p {
+        font-size: 3vw;
+        letter-spacing: 1px;
+    }
+
+    .flying {
+        width: 50vw;
+        animation: flyToCenter 4s ease-in-out infinite alternate;
+    }
+
+    .footer nav {
+        width: 100%;
+        position: static;
+        padding: 2vw 4vw;
+    }
+
+    @keyframes flyToCenter {
+        0% {
+            top: 0;
+            right: 0;
+            transform: translate(0, 0);
+        }
+
+        100% {
+            top: 20%;
+            right: 50%;
+            transform: translate(50%, -30%);
+        }
+    }
+}
